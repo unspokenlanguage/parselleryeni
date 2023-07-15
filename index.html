@@ -2356,7 +2356,7 @@ map.on('click', 'states-layer', (e) => {
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
 .setHTML('Ad : <b>' + e.features[0].properties.Ad  + '</b>' 
-+  'Nitelik : <b>' + e.features[0].properties.Nitelik  + '</b>' 
++ '<br>Nitelik : <b>' + e.features[0].properties.Nitelik  + '</b>' 
 + '<br>Mahalle : <b>' +  e.features[0].properties.Mahalle + '</b>'
 + '<br>Parsel No : <b>' +  e.features[0].properties.ParselNo + '</b>'
 + '<br>Ada : <b>' +  e.features[0].properties.Ada + '</b>'
