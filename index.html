@@ -39,6 +39,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -114,6 +115,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Bahçe",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -173,6 +175,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-B-25-C-4-C",
         "Il": "Zonguldak",
@@ -364,6 +367,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-B-25-C-4-C",
         "Il": "Zonguldak",
@@ -419,6 +423,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -566,6 +571,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -773,6 +779,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Bahçe",
         "Pafta": "F27-B-25-C-4-C",
         "Il": "Zonguldak",
@@ -1220,6 +1227,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -1563,6 +1571,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Arsa",
         "Pafta": "F27-C05-B1",
         "Il": "Zonguldak",
@@ -1610,6 +1619,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -1709,6 +1719,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "2 Katlı Ahşap Bina Ve Arsası",
         "Pafta": "F27-B-25-C-4-D",
         "Il": "Zonguldak",
@@ -2016,6 +2027,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -2107,6 +2119,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -2238,6 +2251,7 @@ map.addSource('states', {
     {
       "type": "Feature",
       "properties": {
+        "Ad" : "yok",
         "Nitelik": "Tarla",
         "Pafta": "F27-C-05-B-1-A",
         "Il": "Zonguldak",
@@ -2341,7 +2355,8 @@ map.flyTo({
 map.on('click', 'states-layer', (e) => {
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
-.setHTML('Nitelik : <b>' + e.features[0].properties.Nitelik  + '</b>'
+.setHTML('Ad : <b>' + e.features[0].properties.Ad  + '</b>' 
++  'Nitelik : <b>' + e.features[0].properties.Nitelik  + '</b>' 
 + '<br>Mahalle : <b>' +  e.features[0].properties.Mahalle + '</b>'
 + '<br>Parsel No : <b>' +  e.features[0].properties.ParselNo + '</b>'
 + '<br>Ada : <b>' +  e.features[0].properties.Ada + '</b>'
